@@ -1,0 +1,26 @@
+{
+	"name": "shredio/exception-reporter",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": ">=8.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Shredio\\ExceptionReporter\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests"
+		}
+	},
+	"scripts": {
+		"phpstan": "phpstan analyse",
+		"test": "vendor/bin/phpunit tests"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^2.1",
+		"phpunit/phpunit": "^13.0"
+	}
+}
